@@ -5,8 +5,8 @@ function probeData($field, $file, $invChar){
  }
 
 #input directory
-$inputDir = (Get-ChildItem (Read-Host "Enter input directory") -Recurse -Include "*.flac", "*.ape", "*.wav", "*.m4a")
-$outputDir = (Get-ChildItem (Read-Host "Enter output directory"))
+$inputDir = Get-ChildItem (Read-Host "Enter input directory") -Recurse -Include "*.flac", "*.ape", "*.wav", "*.m4a"
+$outputDir = Get-ChildItem (Read-Host "Enter output directory")
 
 foreach($inFile in $inputDir) {
     #metadata and output directory
