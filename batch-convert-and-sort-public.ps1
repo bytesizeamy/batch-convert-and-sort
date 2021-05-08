@@ -16,7 +16,7 @@ foreach($inFile in $inputDir) {
     $outFile = "$disc-{0:D2} $title.m4a" -f [int]$track
     
     #make new directory
-    if ((Test-Path "$outputDir\$albumArtist\$album") -eq 0) {
+    if ((Test-Path -LiteralPath "$outputDir\$albumArtist\$album") -eq 0) {
         New-Item -ItemType dir "$outputDir\$albumArtist\$album"
     } 
 
