@@ -1,2 +1,1 @@
-Simple Powershell script to convert lossless audio files to apple lossless, as well as clean up file names and sort to appropriate directory.
-Mostly an exercise to clear the cobwebs off.  Rough draft for bash script to perform similar functions on unix-based music server.
+Simple Powershell script to convert lossless audio files to ALAC, as well as clean up file names and sort to appropriate directory.
